@@ -1,0 +1,15 @@
+use std::io;
+
+// https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
+
+fn main() {
+    println!("Hello, world!");
+
+    let mut guess = String::new();
+
+    io::stdin()
+    .read_line(&mut guess)
+    .expect("You're failed like");
+
+    println!("your guess is {}", guess)
+}
